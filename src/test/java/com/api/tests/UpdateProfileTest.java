@@ -1,5 +1,6 @@
 package com.api.tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthService;
@@ -10,7 +11,7 @@ import com.api.pojo.response.LoginResponse;
 import com.api.pojo.response.UserProfileResponse;
 
 import io.restassured.response.Response;
-
+@Listeners(com.api.listeners.TestListener.class)
 public class UpdateProfileTest {
 
 	@Test (description="Verify if the update API is working")
