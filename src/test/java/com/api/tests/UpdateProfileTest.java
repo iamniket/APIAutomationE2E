@@ -16,7 +16,7 @@ public class UpdateProfileTest {
 	@Test (description="Verify if the update API is working")
 	public void updateProfile() {
 		AuthService authservice = new AuthService();
-		Response response = authservice.login(new LoginRequest("uday1234", "uday1234"));
+		Response response = authservice.login(new LoginRequest("niketaws", "Niket@123"));
 		LoginResponse loginResponse=response.as(LoginResponse.class);
 		
 		UserManagementService userManagementService = new UserManagementService();
@@ -27,7 +27,7 @@ public class UpdateProfileTest {
 		System.out.println(userProfileResponse.getEmail());
 		
 		UpdateProfileRequest updateProfileRequest = new UpdateProfileRequest.Builder().firstName("Samdish").lastName("Patil")
-				.email("Sam@getme.com").mobileNumber("2356987456").build();
+				.email("niketawspractice@gmail.com").mobileNumber("2356987456").build();
 		response =userManagementService.updateProfile(loginResponse.getToken(), updateProfileRequest);
 		System.out.println(response.asPrettyString());
 	}

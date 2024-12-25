@@ -10,7 +10,7 @@ public class ForgotPasswordTest {
 
 	public void forgotPasswordTest() {
 		AuthService authservice = new AuthService();
-		Response response = authservice.forgotPassword("nikee@co.in");
+		Response response = authservice.forgotPassword("niketawspractice@gmail.com");
 		System.out.println(response.asPrettyString());
 	}
 

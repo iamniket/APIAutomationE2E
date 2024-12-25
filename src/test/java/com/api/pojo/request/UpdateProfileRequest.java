@@ -1,7 +1,5 @@
 package com.api.pojo.request;
 
-import com.api.pojo.request.SignUpRequest.Builder;
-
 public class UpdateProfileRequest {
 
 	private String firstName;

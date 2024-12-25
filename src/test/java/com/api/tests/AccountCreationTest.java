@@ -10,8 +10,8 @@ public class AccountCreationTest {
 	@Test(description = "Verify if the signup is working")
 
 	public void createAccountTest() {
-		SignUpRequest signUpRequest = new SignUpRequest.Builder().username("Samu").password("Samu123")
-				.email("Samunik@gmail.com").firstName("Samdish").lastName("Patil").mobileNumber("9881178574").build();
+		SignUpRequest signUpRequest = new SignUpRequest.Builder().username("niketaws123").password("Niket@123")
+				.email("niketawspractice123@gmail.com").firstName("Niket").lastName("Patil").mobileNumber("9949791497").build();
 
 		AuthService authservice = new AuthService();
 		Response response = authservice.signUp(signUpRequest);
